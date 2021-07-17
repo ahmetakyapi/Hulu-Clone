@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;600;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+html,
+body {
+  font-family: 'Rubik', sans-serif;
+  background: black;
+  color: white;
+  overflow-x: hidden;
+  line-height: 1.7;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #ccc;
+}
+
+ul {
+  list-style-type: none;
+}
+
+h4 {
+  color: #00ed82;
+  font-weight: 600;
+  text-transform: uppercase;
+  font-size: 13px;
+}
+
+img {
+  width: 100%;
+}
+
+.header-button {
+  display: inline-block;
+  color: #333;
+  background: white;
+  min-width: 136px;
+  padding: 22px 28px;
+  line-height: 14px;
+  font-weight: 600;
+  font: bold;
+  font-weight: 700;
+  border: none;
+  border-radius: 4px;
+  white-space: nowrap;
+  letter-spacing: 1px;
+  cursor: pointer;
+  text-align: center;
+  text-transform: uppercase;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+
+.header-button:hover {
+  opacity: 0.8;
+}
+
+.legal-text {
+  font-size: 10px;
+  color: #ccc;
+  opacity: 0.9;
+  margin-top: 20px;
+}
+
+/* Style Header */
+
+.header {
+  height: 530px;
+  background: url(../img//header.jpg) no-repeat center center / cover;
+  margin-top: rem;
+}
+
+.header nav {
+  display: flex;
+  justify-content: flex-end;
+  padding: 20px 40px;
+}
+
+.header nav .login-button {
+  background: none;
+  border: none;
+  color: white;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  letter-spacing: 1.5px;
+  padding-right: 20px;
+}
+
+.header nav .login-button:hover {
+  opacity: 0.8;
+}
+
+.header .logo {
+  width: 270px;
+  margin: 20px;
+}
+
+.header .header-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 30px;
+}
+
+.header .header-text-one {
+  font-size: 1.4rem;
+  font-weight: bold;
+}
+
+.header .header-text-two {
+  font-size: 1.1rem;
+  margin: 2rem 0;
+}
