@@ -230,9 +230,43 @@ img {
 }
 
 .categories .covers > div {
-  height: 510px;
-  width: 320px;
+  height: 500px;
+  width: 300px;
   position: relative;
+}
+
+.categories .cover-grad {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+      156.82deg,
+      rgba(0, 0, 0, 0.6) 4.58%,
+      rgba(0, 0, 0, 0) 69.61%
+    ),
+    linear-gradient(24.5deg, rgba(0, 0, 0, 0.2) 4.71%, rgba(0, 0, 0, 0) 71.49%);
+}
+
+.categories .cover-text {
+  position: absolute;
+  text-align: left;
+  left: 20px;
+  top: 20px;
+}
+
+.categories .cover-1 {
+  background: url('../img/cover-1.jpg') no-repeat center center / cover;
+}
+.categories .cover-2 {
+  background: url('../img/cover-2.jpg') no-repeat center center / cover;
+}
+.categories .cover-3 {
+  background: url('../img/cover-3.jpg') no-repeat center center / cover;
+}
+.categories .cover-4 {
+  background: url('../img/cover-4.jpg') no-repeat center center / cover;
 }
 
 /* Tablet Design  */
