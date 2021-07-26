@@ -314,12 +314,12 @@ img {
 
 .live .text-xl {
   color: whitesmoke;
-  font-size: 42px;
+  font-size: 64px;
   font-weight: 800;
 }
 
 .live .sub-text {
-  font-size: 15px;
+  font-size: 27px;
 }
 
 .live .legal-text span {
