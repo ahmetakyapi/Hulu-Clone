@@ -339,8 +339,8 @@ img {
 
 .live-sports-content {
   position: absolute;
-  top: 160px;
-  left: 100px;
+  top: 140px;
+  left: 150px;
   max-width: 560px;
 }
 
@@ -362,7 +362,17 @@ img {
 }
 
 .live-sports-logos img {
-  width: 45px;
+  width: 48px;
+}
+
+.live-sports .legal-text {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.live-sports .legal-text span {
+  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Live Sports End */
