@@ -309,7 +309,7 @@ img {
   font-size: 15px;
   text-decoration: underline;
   margin-top: 20px;
-  opacity: 0.6;
+  opacity: 0.8;
 }
 
 .live .text-xl {
@@ -328,6 +328,44 @@ img {
 }
 
 /* Live TV End */
+
+/* Live Sports */
+
+.live-sports {
+  background: url('../img/live-sports.jpg') no-repeat center center / cover;
+  position: relative;
+  height: 820px;
+}
+
+.live-sports-content {
+  position: absolute;
+  top: 160px;
+  left: 100px;
+  max-width: 560px;
+}
+
+.live-sports-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  margin-top: 40px;
+}
+
+.live-sports-logos > div {
+  background: url('../img/network-logo-bg.png') no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+}
+
+.live-sports-logos img {
+  width: 45px;
+}
+
+/* Live Sports End */
 
 /* Tablet Design  */
 
@@ -390,5 +428,16 @@ img {
 
   .live-border {
     padding: 36px 18px;
+  }
+
+  .live-sports {
+    background: url('../img/live-sports-small.jpg') no-repeat center center /
+      cover;
+  }
+
+  .live-sports-content {
+    top: 30px;
+    left: 30px;
+    margin-top: 70px;
   }
 }
