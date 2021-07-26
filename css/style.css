@@ -438,6 +438,10 @@ img {
   .live-sports-content {
     top: 30px;
     left: 30px;
-    margin-top: 70px;
+    margin-top: 50px;
+  }
+
+  .live-sports-content .text-xl {
+    margin-bottom: 24px;
   }
 }
