@@ -145,6 +145,8 @@ img {
   display: flex;
   justify-content: flex-end;
   padding: 20px 40px;
+  z-index: 2;
+  position: relative;
 }
 
 .header nav .login-button {
@@ -183,6 +185,21 @@ img {
 .header .header-text-two {
   font-size: 1.1rem;
   margin: 2rem 0;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 180px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.76) 16%,
+    rgba(0, 0, 0, 0.192) 60%,
+    rgba(0, 0, 0, 156.82deg) 100%
+  );
 }
 
 /* Style Sub Header */
@@ -277,7 +294,16 @@ img {
   }
 }
 
-/* Mobile Design  */
+/* Tablet Design */
+@media (max-width: 1100px) {
+  .categories-covers {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+/* Tablet Design End */
+
+/* Mobile Design */
 
 @media (max-width: 768px) {
   .header .logo {
@@ -320,5 +346,9 @@ img {
 
   .sub-text {
     font-size: 20px;
+  }
+
+  .categories .covers {
+    grid-template-columns: 1fr;
   }
 }
