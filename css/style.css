@@ -377,7 +377,7 @@ img {
 
 /* Live Sports End */
 
-/* Price List Header Start */
+/* Price List Start */
 
 .price-list-header {
   display: flex;
@@ -486,7 +486,31 @@ img {
   cursor: pointer;
 }
 
-/*  Price List Header End  */
+.price-after-trial {
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: white;
+  color: black;
+}
+
+.price-after-trial-desc {
+  margin-right: 80px;
+}
+
+.card-trial-price-one {
+  margin-left: 160px;
+  text-align: right;
+}
+
+.card-trial-price-two {
+  margin-left: 45px;
+}
+
+.card-trial-price-three {
+  margin-left: 40px;
+}
 
 /* Tablet Design  */
 
