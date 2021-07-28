@@ -145,6 +145,8 @@ img {
   display: flex;
   justify-content: flex-end;
   padding: 20px 40px;
+  z-index: 2;
+  position: relative;
 }
 
 .header nav .login-button {
@@ -183,6 +185,21 @@ img {
 .header .header-text-two {
   font-size: 1.1rem;
   margin: 2rem 0;
+}
+
+.header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 180px;
+  width: 100%;
+  background: linear-gradient(
+    180deg,
+    rgba(0, 0, 0, 0.76) 16%,
+    rgba(0, 0, 0, 0.192) 60%,
+    rgba(0, 0, 0, 156.82deg) 100%
+  );
 }
 
 /* Style Sub Header */
@@ -269,6 +286,240 @@ img {
   background: url('../img/cover-4.jpg') no-repeat center center / cover;
 }
 
+/* Live TV */
+
+.live {
+  padding: 32px;
+  background: #141515;
+}
+
+.live-border {
+  border: 4px solid #00ed82;
+  border-radius: 16px;
+  padding: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.live a {
+  text-transform: uppercase;
+  font-size: 15px;
+  text-decoration: underline;
+  margin-top: 20px;
+  opacity: 0.8;
+}
+
+.live .text-xl {
+  color: whitesmoke;
+  font-size: 64px;
+  font-weight: 800;
+}
+
+.live .sub-text {
+  font-size: 27px;
+}
+
+.live .legal-text span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Live TV End */
+
+/* Live Sports */
+
+.live-sports {
+  background: url('../img/live-sports.jpg') no-repeat center center / cover;
+  position: relative;
+  height: 820px;
+}
+
+.live-sports-content {
+  position: absolute;
+  top: 140px;
+  left: 150px;
+  max-width: 560px;
+}
+
+.live-sports-logos {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 280px;
+  margin-top: 40px;
+}
+
+.live-sports-logos > div {
+  background: url('../img/network-logo-bg.png') no-repeat center center / cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60px;
+  width: 60px;
+}
+
+.live-sports-logos img {
+  width: 48px;
+}
+
+.live-sports .legal-text {
+  font-size: 11px;
+  opacity: 0.9;
+}
+
+.live-sports .legal-text span {
+  text-decoration: underline;
+  cursor: pointer;
+}
+
+/* Live Sports End */
+
+/* Price List Header Start */
+
+.price-list-header {
+  display: flex;
+  background-color: white;
+  color: black;
+}
+
+.price-list-header-content {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  margin-left: 100px;
+}
+
+.price-list-header-title h3 {
+  font-size: 32px;
+  color: black;
+  margin-bottom: 5px;
+}
+
+.price-list-header-desc {
+  display: flex;
+  flex-direction: column;
+  width: 320px;
+}
+
+.price-list-header-desc span {
+  font-weight: 900;
+}
+
+.price-list-header-plan {
+  display: flex;
+  padding: 40px;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.plan-one {
+  margin-left: 20px;
+  margin-right: 80px;
+}
+
+.plan-two {
+  margin-right: 80px;
+  margin-top: 32px;
+  background-color: #f7f8fa;
+}
+
+.plan-three {
+  margin-top: 32px;
+}
+
+.most-popular-button button {
+  width: 128px;
+  height: 28px;
+  border: 1px solid gray;
+  border-radius: 40px;
+  background: darkslategray;
+  color: white;
+  font-weight: 600;
+  font-size: 11px;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  margin-left: 22px;
+}
+
+.plan-title h3 {
+  justify-content: center;
+  text-align: center;
+  margin-top: 10px;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.plan-desc {
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+  color: gray;
+  font-weight: 600;
+  font-size: 14px;
+  margin-top: 8px;
+  margin-bottom: 12px;
+}
+
+.plan-button button {
+  width: 173px;
+  height: 46px;
+  margin-top: 8px;
+  border: none;
+  border-radius: 4px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 1px;
+  line-height: 14px;
+  background: black;
+  color: white;
+  text-transform: uppercase;
+  text-align: center;
+  justify-content: center;
+}
+
+.plan-button button:hover {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.price-after-trial {
+  height: 60px;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background: white;
+  color: black;
+  border-bottom: 2px solid whitesmoke;
+}
+
+.after-trial-desc {
+  margin-left: 60px;
+}
+
+.card-trial-price-one {
+  margin-left: 260px;
+  font-size: 20px;
+  color: darkslategray;
+}
+
+.card-trial-price-two {
+  margin-left: 100px;
+  font-size: 20px;
+  color: darkslategray;
+}
+
+.card-trial-price-three {
+  margin-left: 100px;
+  font-size: 20px;
+  color: darkslategray;
+}
+
+/*  Price List Header End  */
+
 /* Tablet Design  */
 
 @media (max-width: 1100px) {
@@ -277,7 +528,9 @@ img {
   }
 }
 
-/* Mobile Design  */
+/* Tablet Design End */
+
+/* Mobile Design */
 
 @media (max-width: 768px) {
   .header .logo {
@@ -320,5 +573,28 @@ img {
 
   .sub-text {
     font-size: 20px;
+  }
+
+  .categories .covers {
+    grid-template-columns: 1fr;
+  }
+
+  .live-border {
+    padding: 36px 18px;
+  }
+
+  .live-sports {
+    background: url('../img/live-sports-small.jpg') no-repeat center center /
+      cover;
+  }
+
+  .live-sports-content {
+    top: 30px;
+    left: 30px;
+    margin-top: 50px;
+  }
+
+  .live-sports-content .text-xl {
+    margin-bottom: 24px;
   }
 }
