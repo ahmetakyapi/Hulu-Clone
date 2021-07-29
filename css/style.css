@@ -539,12 +539,20 @@ img {
 .footer-lists {
   display: flex;
   justify-content: space-between;
+  opacity: 0.8;
+  font-size: 14px;
+  letter-spacing: 1px;
+  line-height: 32px;
 }
 
 .footer-lists .list-head {
   text-transform: uppercase;
   font-weight: bold;
-  margin-bottom: 5px;
+  margin-bottom: 10px;
+}
+
+.footer-lists .list-space {
+  margin-top: 36px;
 }
 
 .divider {
