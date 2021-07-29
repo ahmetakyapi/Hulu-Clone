@@ -539,7 +539,7 @@ img {
 .footer-lists {
   display: flex;
   justify-content: space-between;
-  opacity: 0.8;
+  opacity: 0.9;
   font-size: 14px;
   letter-spacing: 1px;
   line-height: 32px;
@@ -553,6 +553,15 @@ img {
 
 .footer-lists .list-space {
   margin-top: 36px;
+}
+
+.list-space .list-other-bundle {
+  max-width: 160px;
+}
+
+.footer-lists ul li a:hover {
+  color: darkblue;
+  opacity: 0.9;
 }
 
 .divider {
